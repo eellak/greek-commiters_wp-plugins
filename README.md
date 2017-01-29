@@ -1,4 +1,5 @@
 # greek-commiters_wp-plugins
 
-The Wordpress plugins developed to implement the Github Contributor page at https://opensource.ellak.gr/github_contributor/
+
+Wordpress plugins used to implement the Github Contributors page at https://opensource.ellak.gr/github_contributor/ for local networking and participation to https://www.meetup.com/Athens-FLOSS-Meetup/ .
 
