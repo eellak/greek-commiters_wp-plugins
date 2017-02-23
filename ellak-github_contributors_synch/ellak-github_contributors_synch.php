@@ -431,19 +431,19 @@ function ellak_github_contributors_synch_posts(){
                             $unspecified_flag=true;
                             //if(preg_match('/[Gg][Rr][Ee][Ee][Cc][Ee]/', $the_location)==1 || preg_match('/[Hh]{0,1}[Ee][Ll]{1,2}[Aa][SsDd][Aa]{0,1}/', $the_location)==1 || preg_match('/[Gg][Rr]/', $the_location)==1  || preg_match('/[Ee][Ll]/', $the_location)==1){
                                 error_log('true');
-                            if(preg_match('/[Aa][Tt][Hh][EeIi][Nn][AaSs][Ii]{0,1}/', $the_location)==1){
+                            if(preg_match('/\b[Aa][Tt][Hh][EeIi][Nn][AaSs][Ii]{0,1}\b/', $the_location)==1){
                               $final_location[]='Athens';
                               $unspecified_flag=false;
                             }
-                            if(preg_match('/[Nn][\.]{0,1}[Ee]{0,1}[Aa]{0,1}[ ]{0,1}[Ss][Mm][YyIi][Rr][Nn][IiHh]/', $the_location)==1){
+                            if(preg_match('/\b[Nn][\.]{0,1}[Ee]{0,1}[Aa]{0,1}[ ]{0,1}[Ss][Mm][YyIi][Rr][Nn][IiHh]\b/', $the_location)==1){
                               $final_location[]='N. Smyrni';
                               $unspecified_flag=false;
                             }
-                            if(preg_match('/[Gg][Ll][YyIi][Kk][Aa][ ][Nn][Ee][Rr][Aa]/', $the_location)==1){
+                            if(preg_match('/\b[Gg][Ll][YyIi][Kk][Aa][ ][Nn][Ee][Rr][Aa]\b/', $the_location)==1){
                               $final_location[]='Gerakas';
                               $unspecified_flag=false;
                             }
-                            if(preg_match('/[Kk][Rr][YyIi][Oo][Nn][Ee][Rr][Ii]/', $the_location)==1){
+                            if(preg_match('/\b[Kk][Rr][YyIi][Oo][Nn][Ee][Rr][Ii]\b/', $the_location)==1){
                               $final_location[]='Ag. Stefanos';
                               $unspecified_flag=false;
                             }
@@ -451,15 +451,15 @@ function ellak_github_contributors_synch_posts(){
                               $final_location[]='Glyfada';
                               $unspecified_flag=false;
                             }
-                            if(preg_match('/[CcXx][Hh]{0,1}[Oo][Ll][Aa][Rr][Gg][Oo][Ss]/', $the_location)==1){
+                            if(preg_match('/\b[CcXx][Hh]{0,1}[Oo][Ll][Aa][Rr][Gg][Oo][Ss]\b/', $the_location)==1){
                               $final_location[]='Holargos';
                               $unspecified_flag=false;
                             }
-                            if(preg_match('/[WwOo][Rr][WwOo][Pp][Oo][Ss]/', $the_location)==1){
+                            if(preg_match('/\b[WwOo][Rr][WwOo][Pp][Oo][Ss]\b/', $the_location)==1){
                                 $final_location[]='Oropos';
                                 $unspecified_flag=false;
                             }
-                            if(preg_match('/[Tt][Hh][Ee][Ss]{1,2}[Aa][Ll]{1,2}[Oo][Nn][Ii][Kk][Ii]/', $the_location)==1 || preg_match('/[Ss][Aa][Ll]{1,2}[Oo][Nn][Ii][Kk][Aa]/', $the_location)==1){
+                            if(preg_match('/\b[Tt][Hh][Ee][Ss]{1,2}[Aa][Ll]{1,2}[Oo][Nn][Ii][Kk][Ii]\b/', $the_location)==1 || preg_match('/\b[Ss][Aa][Ll]{1,2}[Oo][Nn][Ii][Kk][Aa]\b/', $the_location)==1){
                                 $final_location[]='Thessaloniki';
                                 $unspecified_flag=false;
                             }
@@ -467,15 +467,15 @@ function ellak_github_contributors_synch_posts(){
                                 $final_location[]='Arta';
                                 $unspecified_flag=false;
                             }
-                            if(preg_match('/[Pp][Aa][Rr][Gg][Aa]/', $the_location)==1){
+                            if(preg_match('/\b[Pp][Aa][Rr][Gg][Aa]\b/', $the_location)==1){
                                 $final_location[]='Kanalaki';
                                 $unspecified_flag=false;
                             }
-                            if(preg_match('/[Pp][Rr][Ee][VvBb][Ee][Zz][Aa]/', $the_location)==1){
+                            if(preg_match('/\b[Pp][Rr][Ee][VvBb][Ee][Zz][Aa]\b/', $the_location)==1){
                                 $final_location[]='Preveza';
                                 $unspecified_flag=false;
                             }
-                            if(preg_match('/[KkCc][Ee][FfPp][Hh]{0,1}[Aa][Ll][OoIiHh][Nn][Ii][Aa]/', $the_location)==1 || preg_match('/[Aa][Rr][Gg][Oo][Ss][Tt][Oo][Ll][Ii][Oo]{0,1}[Nn]{0,1}/', $the_location)==1){
+                            if(preg_match('/\b[KkCc][Ee][FfPp][Hh]{0,1}[Aa][Ll][OoIiHh][Nn][Ii][Aa]\b/', $the_location)==1 || preg_match('/\b[Aa][Rr][Gg][Oo][Ss][Tt][Oo][Ll][Ii][Oo]{0,1}[Nn]{0,1}\b/', $the_location)==1){
                                 $final_location[]='Argostoli';
                                 $unspecified_flag=false;
                             }
@@ -483,195 +483,195 @@ function ellak_github_contributors_synch_posts(){
                               $final_location[]='Kallithea';
                               $unspecified_flag=false;
                             }
-                            if(preg_match('/[KkCc][Aa][Mm][Aa][Tt][Ee][Rr][Oo][Nn]{0,1}/', $the_location)==1 || preg_match('/[Aa][Gg][.Ii]{0,1}[Oo]{0,1}[Ii]{0,1}[ ][Aa][Nn][Aa][Rr][Gg][YyIi][Rr][Oo]{0,1}[Ii]/', $the_location)==1){
+                            if(preg_match('/\b[KkCc][Aa][Mm][Aa][Tt][Ee][Rr][Oo][Nn]{0,1}\b/', $the_location)==1 || preg_match('/\b[Aa][Gg][.Ii]{0,1}[Oo]{0,1}[Ii]{0,1}[ ][Aa][Nn][Aa][Rr][Gg][YyIi][Rr][Oo]{0,1}[Ii]\b/', $the_location)==1){
                               $final_location[]='Ag. Anargyroi';
                               $unspecified_flag=false;
                             }
-                            if(preg_match('/[Ss][Oo]{0,1}[UuYy][Nn][Ii][Oo][Nn]{0,1}/', $the_location)==1 || preg_match('/[Ll][Aa][VvBb][Rr][Ii][Oo][Nn]{0,1}/', $the_location)==1){
+                            if(preg_match('/\b[Ss][Oo]{0,1}[UuYy][Nn][Ii][Oo][Nn]{0,1}\b/', $the_location)==1 || preg_match('/\b[Ll][Aa][VvBb][Rr][Ii][Oo][Nn]{0,1}\b/', $the_location)==1){
                               $final_location[]='Lavrio';
                               $unspecified_flag=false;
                             }
-                            if(preg_match('/[Ll][Aa][Gg][Kk]{0,1}[Aa][Dd][Aa][Ss]/', $the_location)==1 || preg_match('/[Ll][Aa][Gg]{1,2}[Kk]{0,1}[Aa][Dd][Ii][Kk][Ii][Aa]/', $the_location)==1){
+                            if(preg_match('/\b[Ll][Aa][Gg][Kk]{0,1}[Aa][Dd][Aa][Ss]\b/', $the_location)==1 || preg_match('/\b[Ll][Aa][Gg]{1,2}[Kk]{0,1}[Aa][Dd][Ii][Kk][Ii][Aa]\b/', $the_location)==1){
                               $final_location[]='Lagkadas';
                               $unspecified_flag=false;
                             }
-                            if(preg_match('/[Cc]{0,1}[Hh][Aa][Ii][DdTh][Hh]{0,1}[Aa][Rr][Ii][Oo]{0,1}[Nn]{0,1}/', $the_location)==1){
+                            if(preg_match('/\b[Cc]{0,1}[Hh][Aa][Ii][DdTh][Hh]{0,1}[Aa][Rr][Ii][Oo]{0,1}[Nn]{0,1}\b/', $the_location)==1){
                               $final_location[]='Chaidari';
                               $unspecified_flag=false;
                             }
-                            if(preg_match('/[Ss][YyIi][Rr][Oo][Ss]/', $the_location)==1 || preg_match('/[Hh]{0,1}[Ee][Rr][Mm][Oo]{0,1}[UuYy][Pp][Oo][Ll][IiHh][Ss]{0,1}/', $the_location)==1){
+                            if(preg_match('/\b[Ss][YyIi][Rr][Oo][Ss]\b/', $the_location)==1 || preg_match('/\b[Hh]{0,1}[Ee][Rr][Mm][Oo]{0,1}[UuYy][Pp][Oo][Ll][IiHh][Ss]{0,1}\b/', $the_location)==1){
                               $final_location[]='Syros';
                               $unspecified_flag=false;
                             }
-                            if(preg_match('/[Ss][Pp][Aa][Rr][Tt][AaIi]/', $the_location)==1){
+                            if(preg_match('/\b[Ss][Pp][Aa][Rr][Tt][AaIi]\b/', $the_location)==1){
                               $final_location[]='Sparta';
                               $unspecified_flag=false;
                             }
-                            if(preg_match('/[Pp][Aa][Tt][Rr][Aa][Ss]{0,1}/', $the_location)==1 || preg_match('/[Rr][Ii][Oo][Nn]{0,1}/', $the_location)==1){
+                            if(preg_match('/\b[Pp][Aa][Tt][Rr][Aa][Ss]{0,1}\b/', $the_location)==1 || preg_match('/\b[Rr][Ii][Oo][Nn]{0,1}\b/', $the_location)==1){
                               $final_location[]='Patra';
                               $unspecified_flag=false;
                             }
-                            if(preg_match('/[KkCc][Oo][Rr][Ii][Nn][Tt8][Hh][Oo]{0,1}[Ss]{0,1}/', $the_location)==1){
+                            if(preg_match('/\b[KkCc][Oo][Rr][Ii][Nn][Tt8][Hh][Oo]{0,1}[Ss]{0,1}\b/', $the_location)==1){
                               $final_location[]='Korinthos';
                               $unspecified_flag=false;
                             }
-                            if(preg_match('/[Ll][Oo]{0,1}[UuYy][Tt][Rr][Aa][Kk][Ii][Oo]{0,1}[Nn]{0,1}/', $the_location)==1){
+                            if(preg_match('/\b[Ll][Oo]{0,1}[UuYy][Tt][Rr][Aa][Kk][Ii][Oo]{0,1}[Nn]{0,1}\b/', $the_location)==1){
                               $final_location[]='Loutraki';
                               $unspecified_flag=false;
                             }
-                            if(preg_match('/[Ss][Ee][Rr][Ii][Ff][Oo][Ss]/', $the_location)==1){
+                            if(preg_match('/\b[Ss][Ee][Rr][Ii][Ff][Oo][Ss]\b/', $the_location)==1){
                               $final_location[]='Serifos';
                               $unspecified_flag=false;
                             }
-                            if(preg_match('/[Ss][KkCc][Oo][Pp][Ee][Ll][Oo][Ss]/', $the_location)==1){
+                            if(preg_match('/\b[Ss][KkCc][Oo][Pp][Ee][Ll][Oo][Ss]\b/', $the_location)==1){
                               $final_location[]='Skopelos';
                               $unspecified_flag=false;
                             }
-                            if(preg_match('/[IiHh][Ee]{0,1}[Rr][Aa][CcKk][Ll][Ee]{0,1}[Ii]{0,1}[Oo][Nn]{0,1}/', $the_location)==1){
+                            if(preg_match('/\b[IiHh][Ee]{0,1}[Rr][Aa][CcKk][Ll][Ee]{0,1}[Ii]{0,1}[Oo][Nn]{0,1}\b/', $the_location)==1){
                               $final_location[]='Herakleio';
                               $unspecified_flag=false;
                             }
-                            if(preg_match('/[Ll][Aa][Rr][Ii][Ss]{1,2}[Aa]/', $the_location)==1){
+                            if(preg_match('/\b[Ll][Aa][Rr][Ii][Ss]{1,2}[Aa]\b/', $the_location)==1){
                               $final_location[]='Larissa';
                               $unspecified_flag=false;
                             }
-                            if(preg_match('/[Vv][Oo][Ll][Oo][Ss]/', $the_location)==1){
+                            if(preg_match('/\b[Vv][Oo][Ll][Oo][Ss]\b/', $the_location)==1){
                               $final_location[]='Volos';
                               $unspecified_flag=false;
                             }
-                            if(preg_match('/[Rr][Hh]{0,1}[Oo][Dd][OoEe][Ss]/', $the_location)==1){
+                            if(preg_match('/\b[Rr][Hh]{0,1}[Oo][Dd][OoEe][Ss]\b/', $the_location)==1){
                               $final_location[]='Rhodes';
                               $unspecified_flag=false;
                             }
-                            if(preg_match('/[Ii][OoWw][Aa][Nn]{1,2}[Ii][Nn][Aa]/', $the_location)==1){
+                            if(preg_match('/\b[Ii][OoWw][Aa][Nn]{1,2}[Ii][Nn][Aa]\b/', $the_location)==1){
                               $final_location[]='Ioannina';
                               $unspecified_flag=false;
                             }
-                            if(preg_match('/[CcXx][Hh]{0,1}[Aa][Nn][Ii][Aa]/', $the_location)==1){
+                            if(preg_match('/\b[CcXx][Hh]{0,1}[Aa][Nn][Ii][Aa]\b/', $the_location)==1){
                               $final_location[]='Chania';
                               $unspecified_flag=false;
                             }
-                            if(preg_match('/[CcXxKk][Hh]{0,1}[Aa][Ll][Kk][Ii][SsDd][Aa]{0,1}/', $the_location)==1){
+                            if(preg_match('/\b[CcXxKk][Hh]{0,1}[Aa][Ll][Kk][Ii][SsDd][Aa]{0,1}\b/', $the_location)==1){
                               $final_location[]='Chalkida';
                               $unspecified_flag=false;
                             }
-                            if(preg_match('/[Aa][Gg][Rr][Ii][Nn][Ii][Oo][Nn]{0,1}/', $the_location)==1){
+                            if(preg_match('/\b[Aa][Gg][Rr][Ii][Nn][Ii][Oo][Nn]{0,1}\b/', $the_location)==1){
                               $final_location[]='Agrinio';
                               $unspecified_flag=false;
                             }
-                            if(preg_match('/[Kk][Aa][Tt][Ee][Rr][Ii][Nn][IiHh]/', $the_location)==1){
+                            if(preg_match('/\b[Kk][Aa][Tt][Ee][Rr][Ii][Nn][IiHh]\b/', $the_location)==1){
                               $final_location[]='Katerini';
                               $unspecified_flag=false;
                             }
-                            if(preg_match('/[Tt][Rr][Ii][Kk][Aa][Ll][Aa]/', $the_location)==1){
+                            if(preg_match('/\b[Tt][Rr][Ii][Kk][Aa][Ll][Aa]\b/', $the_location)==1){
                               $final_location[]='Trikala';
                               $unspecified_flag=false;
                             }
-                            if(preg_match('/[Ss][Ee][Rr]{0,1}[AaEe][IiSs]/', $the_location)==1){
+                            if(preg_match('/\b[Ss][Ee][Rr]{0,1}[AaEe][IiSs]\b/', $the_location)==1){
                               $final_location[]='Serres';
                               $unspecified_flag=false;
                             }
-                            if(preg_match('/[KkCc][Aa][Ss][Tt][Oo][Rr][Ii][Aa]/', $the_location)==1){
+                            if(preg_match('/\b[KkCc][Aa][Ss][Tt][Oo][Rr][Ii][Aa]\b/', $the_location)==1){
                               $final_location[]='Kastoria';
                               $unspecified_flag=false;
                             }
-                            if(preg_match('/[Ll][Aa][Mm][Ii][Aa]/', $the_location)==1){
+                            if(preg_match('/\b[Ll][Aa][Mm][Ii][Aa]\b/', $the_location)==1){
                               $final_location[]='Lamia';
                               $unspecified_flag=false;
                             }
-                            if(preg_match('/[Aa][Ll][Ee][XxKk][Ss]{0,1}[Aa][Nn][Dd][Rr][Oo]{0,1}[UuYy][Pp][Oo][Ll][IiHh][Ss]{0,1}/', $the_location)==1){
+                            if(preg_match('/\b[Aa][Ll][Ee][XxKk][Ss]{0,1}[Aa][Nn][Dd][Rr][Oo]{0,1}[UuYy][Pp][Oo][Ll][IiHh][Ss]{0,1}\b/', $the_location)==1){
                               $final_location[]='Alexandroupoli';
                               $unspecified_flag=false;
                             }
-                            if(preg_match('/[Ss][Oo]{0,1}[UuYy][Ff][Ll][Ii]/', $the_location)==1){
+                            if(preg_match('/\b[Ss][Oo]{0,1}[UuYy][Ff][Ll][Ii]\b/', $the_location)==1){
                               $final_location[]='Soufli';
                               $unspecified_flag=false;
                             }
-                            if(preg_match('/[Tt][Rr][Ii][Pp][Oo][Ll][IiHh][Ss]{0,1}/', $the_location)==1){
+                            if(preg_match('/\b[Tt][Rr][Ii][Pp][Oo][Ll][IiHh][Ss]{0,1}\b/', $the_location)==1){
                               $final_location[]='Tripoli';
                               $unspecified_flag=false;
                             }
-                            if(preg_match('/[Kk][Oo][Zz][Aa][Nn][IiHh]/', $the_location)==1){
+                            if(preg_match('/\b[Kk][Oo][Zz][Aa][Nn][IiHh]\b/', $the_location)==1){
                               $final_location[]='Kozani';
                               $unspecified_flag=false;
                             }
-                            if(preg_match('/[CcKk][Aa][BbVv][Aa][Ll][Aa]/', $the_location)==1){
+                            if(preg_match('/\b[CcKk][Aa][BbVv][Aa][Ll][Aa]\b/', $the_location)==1){
                               $final_location[]='Kavala';
                               $unspecified_flag=false;
                             }
-                            if(preg_match('/[Vv][Ee][Rr]{1,2}[Oo]{0,1}[Ii][Aa]/', $the_location)==1){
+                            if(preg_match('/\b[Vv][Ee][Rr]{1,2}[Oo]{0,1}[Ii][Aa]\b/', $the_location)==1){
                               $final_location[]='Veroia';
                               $unspecified_flag=false;
                             }
-                            if(preg_match('/[Kk][Ii][Ll][Kk][Ii][Ss]/', $the_location)==1){
+                            if(preg_match('/\b[Kk][Ii][Ll][Kk][Ii][Ss]\b/', $the_location)==1){
                               $final_location[]='Kilkis';
                               $unspecified_flag=false;
                             }
-                            if(preg_match('/[KkCc][Oo][Mm][Oo][Tt][HhIi][Nn][HhIi]/', $the_location)==1){
+                            if(preg_match('/\b[KkCc][Oo][Mm][Oo][Tt][HhIi][Nn][HhIi]\b/', $the_location)==1){
                               $final_location[]='Komotini';
                               $unspecified_flag=false;
                             }
-                            if(preg_match('/[Aa][XxKk][Ss]{0,1}[Ii][Oo]{0,1}[UuYy][Pp][Oo][Ll][IiHh][Ss]{0,1}/', $the_location)==1){
+                            if(preg_match('/\b[Aa][XxKk][Ss]{0,1}[Ii][Oo]{0,1}[UuYy][Pp][Oo][Ll][IiHh][Ss]{0,1}\b/', $the_location)==1){
                               $final_location[]='Polykastro';
                               $unspecified_flag=false;
                             }
-                            if(preg_match('/[CcXx][Hh]{0,1}[Ii][Oo][Ss]/', $the_location)==1){
+                            if(preg_match('/\b[CcXx][Hh]{0,1}[Ii][Oo][Ss]\b/', $the_location)==1){
                               $final_location[]='Chios';
                               $unspecified_flag=false;
                             }
-                            if(preg_match('/[Cc][Oo][Rr][Ff][Uu]/', $the_location)==1 || preg_match('/[Kk][Ee][Rr][Kk][YyIi][Rr][Aa]/', $the_location)==1){
+                            if(preg_match('/\b[Cc][Oo][Rr][Ff][Uu]\b/', $the_location)==1 || preg_match('/\b[Kk][Ee][Rr][Kk][YyIi][Rr][Aa]\b/', $the_location)==1){
                               $final_location[]='Corfu';
                               $unspecified_flag=false;
                             }
-                            if(preg_match('/[Dd][Rr][Aa][Mm][Aa]/', $the_location)==1){
+                            if(preg_match('/\b[Dd][Rr][Aa][Mm][Aa]\b/', $the_location)==1){
                               $final_location[]='Drama';
                               $unspecified_flag=false;
                             }
-                            if(preg_match('/[IiHh][Gg][Oo]{0,1}[UuYy][Mm][Ee][Nn][Ii][Tt][Ss][Aa]/', $the_location)==1){
+                            if(preg_match('/\b[IiHh][Gg][Oo]{0,1}[UuYy][Mm][Ee][Nn][Ii][Tt][Ss][Aa]\b/', $the_location)==1){
                               $final_location[]='Igoumenitsa';
                               $unspecified_flag=false;
                             }
-                            if(preg_match('/[Oo][Rr][Ee][Ss][Tt][Ee]{0,1}[Ii][Aa][SsDd][Aa]{0,1}/', $the_location)==1){
+                            if(preg_match('/\b[Oo][Rr][Ee][Ss][Tt][Ee]{0,1}[Ii][Aa][SsDd][Aa]{0,1}\b/', $the_location)==1){
                               $final_location[]='Orestiada';
                               $unspecified_flag=false;
                             }
-                            if(preg_match('/[Ii][Ee][Rr][Aa][Pp][Ee][Tt][Rr][Aa]/', $the_location)==1){
+                            if(preg_match('/\b[Ii][Ee][Rr][Aa][Pp][Ee][Tt][Rr][Aa]\b/', $the_location)==1){
                               $final_location[]='Ierapetra';
                               $unspecified_flag=false;
                             }
-                            if(preg_match('/[Ss][Aa][Mm][Oo][Ss]/', $the_location)==1){
+                            if(preg_match('/\b[Ss][Aa][Mm][Oo][Ss]\b/', $the_location)==1){
                               $final_location[]='Samos';
                               $unspecified_flag=false;
                             }
-                            if(preg_match('/[Ll][Aa][Mm][Ii][Aa]/', $the_location)==1){
+                            if(preg_match('/\b[Ll][Aa][Mm][Ii][Aa]\b/', $the_location)==1){
                               $final_location[]='Lamia';
                               $unspecified_flag=false;
                             }
-                            if(preg_match('/[Ll][Aa][Rr][Ii][Ss]{1,2}[Aa]/', $the_location)==1){
+                            if(preg_match('/\b[Ll][Aa][Rr][Ii][Ss]{1,2}[Aa]\b/', $the_location)==1){
                               $final_location[]='Larissa';
                               $unspecified_flag=false;
                             }
-                            if(preg_match('/[Mm][Ee][Ss]{1,2}[Oo][Ll][Oo][Nn]{0,1}[Gg]{1,2}[Hh]{0,1}[Ii][Oo]{0,1}[Nn]{0,1}/', $the_location)==1){
+                            if(preg_match('/\b[Mm][Ee][Ss]{1,2}[Oo][Ll][Oo][Nn]{0,1}[Gg]{1,2}[Hh]{0,1}[Ii][Oo]{0,1}[Nn]{0,1}\b/', $the_location)==1){
                               $final_location[]='Messolonghi';
                               $unspecified_flag=false;
                             }
-                            if(preg_match('/[Oo][Ll][Yy][MmBb][PpBb]{0,1}[Ii][Aa]/', $the_location)==1){
+                            if(preg_match('/\b[Oo][Ll][Yy][MmBb][PpBb]{0,1}[Ii][Aa]\b/', $the_location)==1){
                               $final_location[]='Pyrgos';
                               $unspecified_flag=false;
                             }
-                            if(preg_match('/[Pp][Ee]{0,1}[Ii][Rr][Aa]{0,1}[IiEe][UuAa]{0,1}[Ss]/', $the_location)==1){
+                            if(preg_match('/\b[Pp][Ee]{0,1}[Ii][Rr][Aa]{0,1}[IiEe][UuAa]{0,1}[Ss]\b/', $the_location)==1){
                               $final_location[]='Piraeus';
                               $unspecified_flag=false;
                             }
-                            if(preg_match('/[Ss][Aa][Ll][Aa][Mm][Ii][SsNn][Aa]{0,1}/', $the_location)==1){
+                            if(preg_match('/\b[Ss][Aa][Ll][Aa][Mm][Ii][SsNn][Aa]{0,1}\b/', $the_location)==1){
                                 $final_location[]='Salamina';
                                 $unspecified_flag=false;
                             }
-                            if(preg_match('/[Rr][Ee][Tt8][Hh]{0,1}[YyIi][Mm][Nn][Oo][Nn]{0,1}/', $the_location)==1){
+                            if(preg_match('/\b[Rr][Ee][Tt8][Hh]{0,1}[YyIi][Mm][Nn][Oo][Nn]{0,1}\b/', $the_location)==1){
                               $final_location[]='Rethymno';
                               $unspecified_flag=false;
                             }
-                            if(preg_match('/[XxKk][Ss]{0,1}[Aa][Nn][Tt8][Hh]{0,1}[IiHh]/', $the_location)==1){
+                            if(preg_match('/\b[XxKk][Ss]{0,1}[Aa][Nn][Tt8][Hh]{0,1}[IiHh]\b/', $the_location)==1){
                               $final_location[]='Xanthi';
                               $unspecified_flag=false;
                             }
